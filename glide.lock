@@ -1,12 +1,13 @@
-hash: 552613accf0ca0a1c830963f42101b860bbae005f1d9158b0f4ad03f820d05d8
-updated: 2017-03-06T15:09:31.726025366+01:00
+hash: fbcd1e4fe537b2b66df1d8811573968392b71a5f5388b6c042c3580610317371
+updated: 2017-07-20T08:53:06.20655716-07:00
 imports:
 - name: code.cloudfoundry.org/lager
-  version: de8e9c6c6e474e5e3668aea1a9817bdb4ceeceb0
+  version: 62951a8009ab331bb21dc418074fa54e66eb9b6a
   subpackages:
+  - lagerctx
   - lagertest
 - name: github.com/aws/aws-sdk-go
-  version: 78568b07950e5e7948496878fe99b9436add41d4
+  version: c99278599107f124d9676c9023f9554261301e67
   subpackages:
   - aws
   - aws/awserr
@@ -24,19 +25,19 @@ imports:
   - aws/request
   - aws/session
   - aws/signer/v4
+  - internal/shareddefaults
   - private/protocol
   - private/protocol/query
   - private/protocol/query/queryutil
   - private/protocol/rest
   - private/protocol/xml/xmlutil
-  - private/waiter
   - service/iam
   - service/rds
   - service/sts
 - name: github.com/go-ini/ini
-  version: c437d20015c2ab6454b7a66a13109ff0fb99e17a
+  version: 3d73f4b845efdf9989fffd4b4e562727744a34ba
 - name: github.com/go-sql-driver/mysql
-  version: 2e00b5cd70399450106cec6431c2e2ce3cae5034
+  version: 3955978caca48c1658a4bb7a9c6a0f084e326af3
 - name: github.com/gorilla/context
   version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
 - name: github.com/gorilla/mux
@@ -44,7 +45,7 @@ imports:
 - name: github.com/jmespath/go-jmespath
   version: bd40a432e4c76585ef6b72d3fd96fb9b6dc7b68d
 - name: github.com/lib/pq
-  version: 699d6b1bd83a497693f0863c142dd8759b35eb80
+  version: dd1fe2071026ce53f36a39112e645b4d4f5793a4
   subpackages:
   - oid
 - name: github.com/onsi/ginkgo
@@ -80,7 +81,7 @@ imports:
   - matchers/support/goraph/util
   - types
 - name: github.com/pivotal-cf/brokerapi
-  version: b90ba3f93800e6618e6f06280fba6466726f1e9a
+  version: 6d25b9398d9f05880ca8f480134a88c8d2df69bc
   subpackages:
   - auth
 - name: golang.org/x/sys
